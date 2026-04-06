@@ -260,6 +260,64 @@ h1, h2, h3, h4 {
   font-size: 1rem;
 }
 
+/* Header & Navigation */
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 50;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.brand-icon {
+  color: var(--accent-primary);
+}
+
+.brand-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--text-main), var(--text-muted));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-primary);
+}
+
+.nav-btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9375rem;
+}
+
 /* ── Signup Section ─────────────────────────────────── */
 .signup-section {
   padding: 6rem 0;
@@ -493,8 +551,77 @@ footer {
   }
 }
 
+/* How It Works Grid */
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.step-card {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 15px var(--glass-glow);
+}
+
+.step-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.step-card p {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+  
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .app main {
+    padding-top: 140px !important; /* adjust for wrapped header */
+  }
+
   .hero-cta {
     flex-direction: column;
     width: 100%;
