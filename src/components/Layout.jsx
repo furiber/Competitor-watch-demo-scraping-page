@@ -20,7 +20,7 @@ export function Header() {
         <Link to="/business-case" className="nav-link">ROI Case</Link>
         <Link to="/remote-isolation" className="nav-link">Remote Culture</Link>
         <Link to="/virtual-watercooler" className="nav-link">Science</Link>
-        <a href="https://app.coffeeroulette.com/login" className="nav-link" style={{ fontWeight: 600, marginLeft: '1rem' }}>Login</a>
+        <a href="https://app.coffeerouletteapp.com/login" className="nav-link" style={{ fontWeight: 600, marginLeft: '1rem' }}>Login</a>
         <a href="#signup" className="btn btn-primary nav-btn">Get Started</a>
       </nav>
     </header>
