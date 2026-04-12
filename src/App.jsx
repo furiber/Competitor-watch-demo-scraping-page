@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import posthog from 'posthog-js';
 import { Header, Footer } from './components/Layout';
 import Home from './pages/Home';
 import BusinessCase from './pages/BusinessCase';
@@ -21,6 +22,11 @@ function AnalyticsWrapper({ children }) {
         page: location.pathname + location.search
       });
     }
+
+    // PostHog SPA pageview
+    posthog.capture('$pageview', {
+      $current_url: window.location.href,
+    });
   }, [location]);
 
   return children;
