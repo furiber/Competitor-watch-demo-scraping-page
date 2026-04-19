@@ -65,6 +65,8 @@ npm run preview
 
 Output goes to `dist/`. The site is a SPA — your host must redirect all 404s back to `index.html` for client-side routing to work (Netlify `_redirects`, Vercel `vercel.json` rewrites, Nginx `try_files`, etc.).
 
+For Vercel, this repo includes `vercel.json` with a catch-all rewrite to `index.html` so direct visits to routes like `/business-case` do not produce a Vercel `NOT_FOUND` response.
+
 ## Project Structure
 
 ```
