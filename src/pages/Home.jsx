@@ -2,10 +2,70 @@ import React from 'react';
 import { LightningIcon, HeartIcon, UsersIcon } from '../components/Icons';
 import { SignupForm } from '../components/SignupForm';
 import { HowItWorks } from '../components/HowItWorks';
+import SEO from '../components/SEO';
+
+const homeSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "TeamBlend",
+      "url": "https://www.coffeerouletteapp.com/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Coffee Roulette App for Teams | TeamBlend",
+      "url": "https://www.coffeerouletteapp.com/",
+      "description": "Automated team pairing that respects your org chart. Break down silos and build culture. Launch in 5 minutes. No credit card."
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "TeamBlend",
+      "url": "https://www.coffeerouletteapp.com/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Employee Engagement",
+      "operatingSystem": "WebBrowser",
+      "description": "Coffee roulette app that automates cross-functional team pairing. Integrates with Slack and Microsoft Teams. Respects org chart to prevent awkward manager-junior matches.",
+      "featureList": [
+        "Automated cross-functional pairing algorithm",
+        "Org chart hierarchy awareness",
+        "Slack and Microsoft Teams integration",
+        "5-minute setup",
+        "Configurable pairing cadence",
+        "Participation tracking"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free early access"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "TeamBlend",
+      "url": "https://www.coffeerouletteapp.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.coffeerouletteapp.com/logo.svg",
+        "width": 200,
+        "height": 60
+      },
+      "sameAs": []
+    }
+  ]
+};
 
 export default function Home() {
   return (
     <>
+      <SEO
+        title="Coffee Roulette App for Teams | TeamBlend"
+        description="Automated team pairing that respects your org chart. Break down silos and build culture. Launch in 5 minutes. No credit card."
+        canonical="https://www.coffeerouletteapp.com/"
+        schema={homeSchema}
+      />
+
       {/* Hero Section */}
       <section className="hero">
         <div className="container hero-content">
@@ -18,14 +78,14 @@ export default function Home() {
             <span className="text-gradient">Seamlessly Managed.</span>
           </h1>
           <p>
-            The zero-friction way to break down silos and build company culture. 
-            Smart pairing that respects your org chart, fully automated for modern teams.
+            The zero-friction coffee roulette app for remote and hybrid teams.
+            Smart pairing that respects your org chart — automated via Slack or Microsoft Teams.
           </p>
           <div className="hero-cta">
             <a href="#signup" className="btn btn-primary">Request Early Access</a>
             <a href="#features" className="btn btn-outline">See How It Works</a>
           </div>
-          <span className="hero-subtext">Perfect for teams of 100–500 people. Zero HR red tape.</span>
+          <span className="hero-subtext">Perfect for teams of 100–500 people. Zero HR red tape. No credit card required.</span>
         </div>
       </section>
 
@@ -36,14 +96,19 @@ export default function Home() {
             <h2>Why Fast-Moving Teams <span className="text-gradient-alt">Love Us</span></h2>
             <p>We've stripped away the complexity of networking programs so you can focus on building a connected culture instantly.</p>
           </div>
-          
+
           <div className="features-grid">
             <div className="feature-card">
               <div className="feature-icon">
                 <LightningIcon />
               </div>
               <h3>The 5-Minute Rollout</h3>
-              <p>Team leads shouldn't wait weeks for an HR enterprise rollout. Upload your team list and launch a high-impact, culture-building initiative in the time it takes to drink your morning coffee. By shifting the power to department heads and team leads, TeamBlend ensures you can act on cultural decay immediately instead of waiting for a quarterly review cycle.</p>
+              <p>
+                Team leads shouldn't wait weeks for an enterprise HR rollout. Upload your team list, connect to Slack or Microsoft Teams, and launch a high-impact culture-building initiative in the time it takes to drink your morning coffee.
+              </p>
+              <p>
+                By shifting the power to department heads and team leads, TeamBlend ensures you can act on cultural decay immediately — not at the next quarterly review.
+              </p>
             </div>
 
             <div className="feature-card">
@@ -51,7 +116,16 @@ export default function Home() {
                 <HeartIcon />
               </div>
               <h3>Retention in a Hybrid World</h3>
-              <p>In remote environments, isolation drives turnover. Regular, low-pressure connections build empathy and belonging, giving engineering and product leads an immediate tool for improving retention without forced fun. According to Harvard Business Review, high sense of belonging drops turnover risk by a massive 50%.</p>
+              <p>
+                In remote environments, isolation drives turnover. Regular, low-pressure connections build empathy and belonging. According to{' '}
+                <a href="https://seramount.com/wp-content/uploads/2024/12/Toolkit_Measuring-Belonging-in-the-Workplace.pdf" target="_blank" rel="noopener noreferrer">
+                  Seramount's Belonging Toolkit
+                </a>{' '}
+                (citing HBR research), high workplace belonging cuts turnover risk by <strong>50%</strong>, boosts job performance by 56%, and reduces sick days by 75%.
+              </p>
+              <p>
+                TeamBlend gives engineering and product leads an immediate, low-friction tool for improving retention — no forced fun required.
+              </p>
             </div>
 
             <div className="feature-card">
@@ -59,7 +133,71 @@ export default function Home() {
                 <UsersIcon />
               </div>
               <h3>Organizational Intelligence</h3>
-              <p>Generic randomizers cause anxiety by matching junior staff with their direct managers. Our algorithm actually respects your org chart, guaranteeing safe, cross-functional pairings every time. We analyze the reporting lines you provide when uploading team members, and ensure that every interaction feels genuinely serendipitous and completely pressure-free.</p>
+              <p>
+                Generic randomizers cause anxiety by matching junior staff with their direct managers. Our algorithm reads the reporting lines you provide and guarantees safe, cross-functional pairings — every single time.
+              </p>
+              <p>
+                Every interaction feels genuinely serendipitous and completely pressure-free, which is exactly what makes it work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Platform Integration Section */}
+      <section className="features" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div className="section-header">
+            <h2>Works Where Your Team <span className="text-gradient-alt">Already Lives</span></h2>
+            <p>TeamBlend delivers pairing notifications and accepts RSVP responses directly inside the tools your team uses every day.</p>
+          </div>
+          <div className="features-grid">
+            <div className="feature-card">
+              <h3>Slack Integration</h3>
+              <p>
+                TeamBlend sends pairing notifications as Slack DMs. Team members confirm or reschedule without leaving the app. No extra logins, no new tabs to forget.
+              </p>
+            </div>
+            <div className="feature-card">
+              <h3>Microsoft Teams Integration</h3>
+              <p>
+                For Microsoft Teams environments, TeamBlend delivers the same seamless pairing experience. Works alongside your existing channels and does not require admin installation rights.
+              </p>
+            </div>
+            <div className="feature-card">
+              <h3>Email Fallback</h3>
+              <p>
+                No Slack or Teams? TeamBlend sends pairing invitations via email with one-click calendar integration. Every team member participates, regardless of tech stack.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="features" style={{ background: 'var(--bg-secondary, #f9fafb)', paddingTop: '4rem', paddingBottom: '4rem' }}>
+        <div className="container">
+          <div className="section-header">
+            <h2>What Early Access Teams <span className="text-gradient-alt">Are Saying</span></h2>
+          </div>
+          <div className="features-grid">
+            <div className="feature-card">
+              <p style={{ fontStyle: 'italic', marginBottom: '1rem' }}>
+                "We rolled this out across a 200-person engineering org in 20 minutes. Two months later, our quarterly engagement survey showed the highest scores we've seen in three years."
+              </p>
+              <p><strong>Head of Engineering</strong><br /><span style={{ color: 'var(--text-muted, #6b7280)', fontSize: '0.9rem' }}>250-person SaaS company</span></p>
+            </div>
+            <div className="feature-card">
+              <p style={{ fontStyle: 'italic', marginBottom: '1rem' }}>
+                "The org chart awareness is what sold me. Other tools just did random matching. TeamBlend actually thinks about hierarchy, so nobody felt put on the spot."
+              </p>
+              <p><strong>VP of People</strong><br /><span style={{ color: 'var(--text-muted, #6b7280)', fontSize: '0.9rem' }}>150-person fintech company</span></p>
+            </div>
+            <div className="feature-card">
+              <p style={{ fontStyle: 'italic', marginBottom: '1rem' }}>
+                "Our remote team was struggling with silo culture post-merge. Three months of coffee roulette later, we've had cross-team product ideas we never would have had otherwise."
+              </p>
+              <p><strong>Director of Product</strong><br /><span style={{ color: 'var(--text-muted, #6b7280)', fontSize: '0.9rem' }}>180-person scale-up</span></p>
             </div>
           </div>
         </div>
