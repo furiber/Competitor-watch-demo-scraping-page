@@ -94,7 +94,7 @@ export default function VirtualWatercooler() {
       <section className="hero" style={{ minHeight: 'unset', paddingTop: '4rem', paddingBottom: '2rem' }}>
         <div className="container hero-content">
           <h1>
-            The Science of the <span className="text-gradient">Virtual Water Cooler</span>
+            Build a <span className="text-gradient">Virtual Water Cooler</span> That Drives Innovation
           </h1>
           <p style={{ maxWidth: '800px', margin: '0 auto 2rem' }}>
             Organic chance encounters used to drive your company's greatest innovations. In remote teams, they have to be engineered. This is the research behind why that matters — and how TeamBlend does it.

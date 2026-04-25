@@ -86,7 +86,7 @@ export default function RemoteIsolation() {
       <section className="hero" style={{ minHeight: 'unset', paddingTop: '4rem', paddingBottom: '2rem' }}>
         <div className="container hero-content">
           <h1>
-            Combating <span className="text-gradient">Workplace Loneliness</span>
+            Reduce <span className="text-gradient">Remote Workplace Loneliness</span>
           </h1>
           <p style={{ maxWidth: '800px', margin: '0 auto 2rem' }}>
             1 in 5 remote workers is lonely. It's destroying productivity and driving turnover. Stop treating loneliness as an HR problem and start solving it systematically.
