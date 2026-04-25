@@ -81,7 +81,7 @@ export default function BusinessCase() {
       <section className="hero" style={{ minHeight: 'unset', paddingTop: '4rem', paddingBottom: '2rem' }}>
         <div className="container hero-content">
           <h1>
-            The $483B Cost of <span className="text-gradient">Disengagement</span>
+            Coffee Roulette ROI: <span className="text-gradient">The Business Case</span>
           </h1>
           <p style={{ maxWidth: '800px', margin: '0 auto 2rem' }}>
             Disengagement is an invisible tax on your engineering output. You can't fix it with another mandatory meeting. The data shows belonging drives performance — and TeamBlend automates belonging.

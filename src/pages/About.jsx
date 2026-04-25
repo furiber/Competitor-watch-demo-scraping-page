@@ -38,7 +38,7 @@ export default function About() {
       <section className="hero" style={{ minHeight: 'unset', paddingTop: '4rem', paddingBottom: '2rem' }}>
         <div className="container hero-content">
           <h1>
-            About <span className="text-gradient">TeamBlend</span>
+            About <span className="text-gradient">TeamBlend Coffee Roulette</span>
           </h1>
           <p style={{ maxWidth: '800px', margin: '0 auto 2rem' }}>
             We built TeamBlend because we experienced the problem ourselves — and because the research on what actually fixes it is overwhelming clear, yet almost nobody acts on it.

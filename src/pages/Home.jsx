@@ -74,8 +74,8 @@ export default function Home() {
             <span>Launch in under 5 minutes</span>
           </div>
           <h1>
-            Spontaneous Connections, <br />
-            <span className="text-gradient">Seamlessly Managed.</span>
+            Coffee Roulette App <br />
+            <span className="text-gradient">for Remote Teams</span>
           </h1>
           <p>
             The zero-friction coffee roulette app for remote and hybrid teams.
