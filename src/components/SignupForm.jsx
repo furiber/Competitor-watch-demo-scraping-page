@@ -30,6 +30,14 @@ export function SignupForm() {
       });
 
       if (res.ok) {
+        if (typeof window !== 'undefined') {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'signup_form_submit',
+            form_id: 'signup-form',
+            org_name: formData.orgName,
+          });
+        }
         setStatus('success');
         return;
       }
