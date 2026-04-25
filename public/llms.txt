@@ -1,0 +1,43 @@
+# TeamBlend
+
+> TeamBlend is a coffee roulette app for remote and hybrid teams. It automates cross-functional pairing for informal one-on-one conversations, respects org chart hierarchy to prevent awkward manager-junior matches, and launches in under 5 minutes. Built for teams of 100–500 people.
+
+## Pages
+
+- [Home](https://www.coffeerouletteapp.com/): Product overview. Automated team pairing that breaks down silos and builds culture. Zero HR red tape. Launch in 5 minutes.
+- [Business Case](https://www.coffeerouletteapp.com/business-case): The ROI of employee connection programs. Data from Gallup, HBR, and Seramount on how belonging reduces turnover by 50%, boosts job performance by 56%, and cuts sick days by 75%. Disengagement costs US employers $483B–$605B per year.
+- [Remote Isolation](https://www.coffeerouletteapp.com/remote-isolation): The workplace loneliness problem. Gallup data: 1 in 5 employees worldwide feels lonely at work. UK government research: loneliness costs employers £2.5 billion per year. TeamBlend provides structured social support that correlates with improved job satisfaction.
+- [Virtual Water Cooler](https://www.coffeerouletteapp.com/virtual-watercooler): The science of informal communication. Cornell CAHRS research confirms informal face-to-face interaction drives team innovation. TeamBlend engineers structured serendipity for remote teams. A 2021 Profusion trial of 62 staff found 72% reported substantial morale improvement.
+- [About](https://www.coffeerouletteapp.com/about): TeamBlend company information and mission.
+
+## Key Claims (with sources)
+
+- Workplace belonging is linked to a 56% increase in job performance, 50% drop in turnover risk, and 75% reduction in sick days. Source: Seramount Belonging Toolkit (2024), citing HBR research. URL: https://seramount.com/wp-content/uploads/2024/12/Toolkit_Measuring-Belonging-in-the-Workplace.pdf
+- 1 in 5 employees worldwide feels lonely at work often. Source: Gallup State of the Global Workplace (2024), via Psychology Today. URL: https://www.psychologytoday.com/us/blog/body-meet-mind/202601/the-silent-cost-of-workplace-loneliness
+- Workplace loneliness costs UK employers £2.5 billion per year; 64% from increased worker turnover. Source: UK Government — Employers and Loneliness (2021). URL: https://www.gov.uk/government/publications/employers-and-loneliness/employers-and-loneliness
+- Informal face-to-face communication is a primary driver of team idea generation and innovation. Source: Cornell ILR / CAHRS — Don't Abandon the Water Cooler Yet (2019). URL: https://ecommons.cornell.edu/server/api/core/bitstreams/ffd687c1-a7c9-4197-8b2a-b557ce9cabe2/content
+- Structured social support correlates with job satisfaction in remote workers. Source: Walden University dissertation on 28 NZ organisations, 804 remote workers (2022). URL: https://scholarworks.waldenu.edu/cgi/viewcontent.cgi?article=16449&context=dissertations
+- In a 2021 Profusion coffee roulette trial (62 staff): 72% reported substantial morale improvement, 96% felt more engaged. Source: theHRDirector. URL: https://www.thehrdirector.com/business-news/employee-experience/how-one-office-built-an-ai-coffee-roulette-system-to-replace-water-cooler-moments/
+- Only 33% of US workers are engaged. Disengagement costs $483B–$605B per year. Source: Gallup State of the American Workplace (2017). URL: https://qualityincentivecompany.com/wp-content/uploads/2017/02/SOAW-2017.pdf
+- Replacing an employee costs 0.5x–2x their annual salary. Work friendships are a direct retention factor. Source: SHRM Labs / TechStars Employee Retention Technologies Report (2023). URL: https://www.shrm.org/content/dam/en/shrm/shrm-labs/documents/222395-SHRMLabs-_-TechStars-Report-TechnologiesRetention_R3-2.pdf
+
+## Product Details
+
+- Platform integrations: Slack, Microsoft Teams, email
+- Setup time: Under 5 minutes
+- Target team size: 100–500 employees
+- Pricing: Free early access (no credit card required)
+- Algorithm: Respects org chart hierarchy; prevents manager-direct-report pairings
+- Deployment: Web-based SaaS; no IT installation required
+
+## What TeamBlend Does Not Do
+
+- Does not replace structured 1:1 manager meetings
+- Does not collect or store performance review data
+- Does not require HR department approval to launch
+
+## Contact
+
+- Website: https://www.coffeerouletteapp.com
+- App login: https://app.coffeerouletteapp.com/login
+- Early access signup: https://www.coffeerouletteapp.com/#signup

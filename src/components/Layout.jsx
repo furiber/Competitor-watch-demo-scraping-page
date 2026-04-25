@@ -31,7 +31,14 @@ export function Footer() {
   return (
     <footer>
       <div className="container">
-        <p>&copy; {new Date().getFullYear()} TeamBlend. Spontaneous connections, zero friction.</p>
+        <nav style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '1rem' }}>
+          <Link to="/" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>Home</Link>
+          <Link to="/business-case" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>View the business case for coffee roulette</Link>
+          <Link to="/remote-isolation" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>Remote workplace loneliness</Link>
+          <Link to="/virtual-watercooler" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>Virtual water cooler science</Link>
+          <Link to="/about" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.8 }}>About TeamBlend</Link>
+        </nav>
+        <p style={{ margin: 0 }}>&copy; {new Date().getFullYear()} TeamBlend. Spontaneous connections, zero friction.</p>
       </div>
     </footer>
   );
