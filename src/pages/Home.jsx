@@ -174,35 +174,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="features" style={{ background: 'var(--bg-secondary, #f9fafb)', paddingTop: '4rem', paddingBottom: '4rem' }}>
-        <div className="container">
-          <div className="section-header">
-            <h2>What Early Access Teams <span className="text-gradient-alt">Are Saying</span></h2>
-          </div>
-          <div className="features-grid">
-            <div className="feature-card">
-              <p style={{ fontStyle: 'italic', marginBottom: '1rem' }}>
-                "We rolled this out across a 200-person engineering org in 20 minutes. Two months later, our quarterly engagement survey showed the highest scores we've seen in three years."
-              </p>
-              <p><strong>Head of Engineering</strong><br /><span style={{ color: 'var(--text-muted, #6b7280)', fontSize: '0.9rem' }}>250-person SaaS company</span></p>
-            </div>
-            <div className="feature-card">
-              <p style={{ fontStyle: 'italic', marginBottom: '1rem' }}>
-                "The org chart awareness is what sold me. Other tools just did random matching. TeamBlend actually thinks about hierarchy, so nobody felt put on the spot."
-              </p>
-              <p><strong>VP of People</strong><br /><span style={{ color: 'var(--text-muted, #6b7280)', fontSize: '0.9rem' }}>150-person fintech company</span></p>
-            </div>
-            <div className="feature-card">
-              <p style={{ fontStyle: 'italic', marginBottom: '1rem' }}>
-                "Our remote team was struggling with silo culture post-merge. Three months of coffee roulette later, we've had cross-team product ideas we never would have had otherwise."
-              </p>
-              <p><strong>Director of Product</strong><br /><span style={{ color: 'var(--text-muted, #6b7280)', fontSize: '0.9rem' }}>180-person scale-up</span></p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <HowItWorks />
 
       {/* Signup Section */}
