@@ -10,3 +10,7 @@
 4. Verify the file is valid XML before committing.
 
 This rule is non-negotiable — keep the whole sitemap current on every change.
+
+## Lint
+
+Before every `git push`, run `npm run lint` and ensure it exits clean (zero errors, zero warnings). If it does not, fix all issues before pushing — use `/lint` to do this automatically. Never push with lint errors present.
