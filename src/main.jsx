@@ -14,6 +14,18 @@ if (import.meta.env.VITE_POSTHOG_KEY) {
   })
 }
 
+// Strip prerendered SEO tags before react-helmet-async takes ownership.
+// Crawlers that don't execute JS see the static prerendered tags; in the
+// browser this runs synchronously before React renders so react-helmet-async
+// can inject its own copies without creating duplicates.
+[
+  'link[rel="canonical"]',
+  'meta[name="description"]',
+  'meta[property^="og:"]',
+  'meta[name^="twitter:"]',
+  'script[type="application/ld+json"]',
+].forEach((sel) => document.querySelectorAll(sel).forEach((el) => el.remove()));
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
