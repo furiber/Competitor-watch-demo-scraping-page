@@ -19,6 +19,7 @@ if (import.meta.env.VITE_POSTHOG_KEY) {
 // browser this runs synchronously before React renders so react-helmet-async
 // can inject its own copies without creating duplicates.
 [
+  'title',
   'link[rel="canonical"]',
   'meta[name="description"]',
   'meta[property^="og:"]',
