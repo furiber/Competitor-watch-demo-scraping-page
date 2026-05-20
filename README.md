@@ -1,81 +1,78 @@
-# TeamBlend — coffeerouletteapp.com
+# PeakHome NZ
 
-Zero-friction coffee roulette for remote and hybrid teams. Smart peer matching that respects your org chart, fully automated — no HR red tape.
+A static marketing website for PeakHome NZ — Auckland's trusted network of vetted tradespeople.
 
-## What This Repo Is
+**Live URL:** https://peakhome-nz.vercel.app
 
-This is the **marketing website** for TeamBlend at [www.coffeerouletteapp.com](https://www.coffeerouletteapp.com). It is a static single-page application built with React + Vite. It is separate from the product app, which lives at `app.coffeerouletteapp.com`.
+## Site Structure
+
+```text
+index.html              Home page
+services.html           Six trade services
+pricing.html            Three pricing plans + comparison table
+about.html              Company story and team
+contact.html            Contact form and details
+blog/
+  index.html            Article index
+  winter-prep-guide.html
+  choosing-a-tradesperson.html
+  deck-maintenance-tips.html
+styles.css              Shared stylesheet (all pages)
+public/
+  sitemap.xml           Canonical sitemap
+vercel.json             Vercel deployment config
+```
 
 ## Tech Stack
 
-- **React 19** — UI framework
-- **Vite 7** — build tool and dev server
-- **React Router v7** — client-side routing
-- **Pure CSS** — custom properties, no utility framework
-- **PostHog** — product analytics (SPA pageview tracking)
+Plain HTML, CSS, and minimal vanilla JS (nav toggle only). No frameworks, no build step. Open any `.html` file in a browser to preview locally.
 
-## Pages / Routes
+## Deployment
 
-| Path | Component | Description |
-|---|---|---|
-| `/` | `Home.jsx` | Landing page, hero, features, signup CTA |
-| `/business-case` | `BusinessCase.jsx` | ROI and disengagement cost data |
-| `/remote-isolation` | `RemoteIsolation.jsx` | Workplace loneliness and remote culture |
-| `/virtual-watercooler` | `VirtualWatercooler.jsx` | Science of informal connection |
+Push to `main` — Vercel deploys automatically. `vercel.json` enables clean URLs (no `.html` extension) and disables trailing slashes.
 
-## Development Setup
+---
 
-**Prerequisites:** Node.js 18+
+## Updating content for Rival Watch testing
 
-```bash
-# Install dependencies
-npm install
+### Editing a page's content
 
-# Copy environment variables
-cp .env.example .env
-# Edit .env and fill in your values
+1. Open the relevant `.html` file in your editor (e.g. `services.html`).
+2. Make your content changes.
+3. Open `public/sitemap.xml` and update the `<lastmod>` value for that page's `<url>` entry to today's date in `YYYY-MM-DD` format.
+4. Commit and push — Vercel redeploys automatically.
 
-# Start dev server
-npm run dev
+### Updating a page's `lastmod` in sitemap.xml
+
+Open `public/sitemap.xml` and find the `<url>` block for the page you changed. Update the `<lastmod>` line:
+
+```xml
+<lastmod>2026-05-20</lastmod>
 ```
 
-The dev server runs at `http://localhost:5173` by default.
+Per the project rules in `CLAUDE.md`, **all** `<lastmod>` values must be updated to today's date on every content, routing, or SEO change — not just the affected URL.
 
-## Environment Variables
+### Adding a new blog post
 
-See `.env.example` for all required variables.
+1. Copy an existing post file, e.g.:
 
-| Variable | Description |
-|---|---|
-| `VITE_API_URL` | Backend API endpoint for the early access signup form |
-| `VITE_POSTHOG_KEY` | PostHog project API key (get from posthog.com) |
-| `VITE_POSTHOG_HOST` | PostHog instance URL (default: `https://us.i.posthog.com`) |
+   ```bash
+   cp blog/deck-maintenance-tips.html blog/my-new-post.html
+   ```
 
-PostHog is opt-in — if `VITE_POSTHOG_KEY` is not set, analytics are silently skipped.
+2. Edit the new file: update `<title>`, `<meta name="description">`, `<link rel="canonical">`, the article header, and the article body content.
+3. Add the new post to `blog/index.html` — copy one of the existing `.blog-card` anchor blocks and update the `href`, image emoji/background, date, title, and excerpt.
+4. Add a link to the new post from the home page (`index.html`) "From the Blog" section if you want it featured there.
+5. Add a new `<url>` entry to `public/sitemap.xml`:
 
-## Build & Deployment
+   ```xml
+   <url>
+     <loc>https://peakhome-nz.vercel.app/blog/my-new-post</loc>
+     <lastmod>2026-05-20</lastmod>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+   ```
 
-```bash
-# Production build
-npm run build
-
-# Preview production build locally
-npm run preview
-```
-
-Output goes to `dist/`. The site is a SPA — your host must redirect all 404s back to `index.html` for client-side routing to work (Netlify `_redirects`, Vercel `vercel.json` rewrites, Nginx `try_files`, etc.).
-
-For Vercel, this repo includes `vercel.json` with a catch-all rewrite to `index.html` so direct visits to routes like `/business-case` do not produce a Vercel `NOT_FOUND` response.
-
-## Project Structure
-
-```
-src/
-  pages/         # One file per route
-  components/    # Shared UI: Layout, SignupForm, HowItWorks, Icons
-  index.css      # All styles (CSS custom properties + component classes)
-  App.jsx        # Router, AnalyticsWrapper (PostHog + GTM pageview tracking)
-  main.jsx       # Entry point, PostHog init
-public/
-  sitemap.xml    # Static sitemap for all 4 routes
-```
+6. Update **all** other `<lastmod>` values in the sitemap to today's date.
+7. Commit and push.
