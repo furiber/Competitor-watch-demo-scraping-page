@@ -2,7 +2,7 @@
 
 A static marketing website for PeakHome NZ — Auckland's trusted network of vetted tradespeople.
 
-**Live URL:** https://peakhome-nz.vercel.app
+**Live URL:** [https://peakhome-nz.vercel.app](https://competitor-watch-demo-scraping-page.vercel.app/)
 
 ## Site Structure
 
