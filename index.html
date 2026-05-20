@@ -1,24 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Title, description, canonical, OG, and schema are injected per-page by react-helmet-async (SEO component) -->
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MBPPV5M8');</script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBPPV5M8"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeakHome NZ — Your Home, Looked After</title>
+  <meta name="description" content="PeakHome NZ connects Auckland homeowners with reliable, vetted tradespeople. Fast response, fixed pricing, and quality you can trust.">
+  <link rel="canonical" href="https://peakhome-nz.vercel.app/">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">Peak<span>Home</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li class="nav-cta"><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Trusted Auckland Tradespeople</span>
+      <h1>Your home,<br><em>looked after.</em></h1>
+      <p>From leaky taps to full renovations, PeakHome connects you with vetted NZ tradies who show up on time, do the job right, and charge what they quote.</p>
+      <div class="hero-actions">
+        <a href="/services" class="btn btn-primary">View Services</a>
+        <a href="/contact" class="btn btn-outline">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-value">850+</div>
+        <div class="stat-label">Jobs completed</div>
+      </div>
+      <div>
+        <div class="stat-value">4.9★</div>
+        <div class="stat-label">Average rating</div>
+      </div>
+      <div>
+        <div class="stat-value">45 min</div>
+        <div class="stat-label">Avg. response time</div>
+      </div>
+      <div>
+        <div class="stat-value">6+</div>
+        <div class="stat-label">Trade specialties</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Why PeakHome</span>
+      <h2>Tradespeople you can actually rely on</h2>
+      <p>No more waiting around or surprise bills. We've built a network of proven professionals across Auckland.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Fast Response</h3>
+        <p>Most jobs get a confirmed booking within 2 hours. Urgent callouts available 7 days a week across greater Auckland.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✅</div>
+        <h3>Vetted Professionals</h3>
+        <p>Every tradie on our platform is licensed, insured, and has passed background checks. Zero shortcuts on who we work with.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💲</div>
+        <h3>Fixed Pricing</h3>
+        <p>You get a clear quote before any work starts. What we quote is what you pay — no hidden call-out fees or surprise extras.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Do</span>
+      <h2>Six trades, one platform</h2>
+      <p>Whether it's a leaking pipe or a full repaint, we've got a specialist for the job.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Plumbing</h3>
+        <p>Blocked drains, hot water cylinders, burst pipes, bathroom installs, and everything in between.</p>
+        <a href="/services" class="service-link">Learn more →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Electrical</h3>
+        <p>Switchboard upgrades, fault finding, EV charger installs, heat pump wiring, and general electrical work.</p>
+        <a href="/services" class="service-link">Learn more →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Roofing</h3>
+        <p>Leak repairs, iron and tile roofing, gutter replacement, and full reroofs for residential properties.</p>
+        <a href="/services" class="service-link">Learn more →</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="/services" class="btn btn-outline-dark">See all services</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Ready to sort your home?</h2>
+    <p>Tell us what needs doing and we'll have a tradie in touch within the hour.</p>
+    <div class="hero-actions">
+      <a href="/contact" class="btn btn-primary">Get a Free Quote</a>
+      <a href="/pricing" class="btn btn-outline">See Pricing</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">From the Blog</span>
+      <h2>Homeowner guides &amp; tips</h2>
+      <p>Practical advice for keeping your NZ home in top shape, season by season.</p>
+    </div>
+    <div class="blog-grid">
+      <a href="/blog/winter-prep-guide" class="blog-card" style="text-decoration:none;color:inherit;">
+        <div class="blog-card-img" style="background:#e8f4f8;">❄️</div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span>12 May 2026</span>
+            <span>5 min read</span>
+          </div>
+          <h3>Winter Home Prep: Your Complete NZ Checklist</h3>
+          <p>Get your home watertight and warm before the cold weather hits. Here's what to check and fix before June.</p>
+          <span class="blog-read-more">Read article →</span>
+        </div>
+      </a>
+      <a href="/blog/choosing-a-tradesperson" class="blog-card" style="text-decoration:none;color:inherit;">
+        <div class="blog-card-img" style="background:#f0f8e8;">🔍</div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span>28 Apr 2026</span>
+            <span>6 min read</span>
+          </div>
+          <h3>How to Choose a Tradesperson in New Zealand</h3>
+          <p>Licensing, insurance, references — what you actually need to check before letting anyone into your home.</p>
+          <span class="blog-read-more">Read article →</span>
+        </div>
+      </a>
+      <a href="/blog/deck-maintenance-tips" class="blog-card" style="text-decoration:none;color:inherit;">
+        <div class="blog-card-img" style="background:#f8f0e8;">🪵</div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span>14 Apr 2026</span>
+            <span>4 min read</span>
+          </div>
+          <h3>Deck Maintenance Tips for the NZ Climate</h3>
+          <p>New Zealand's UV and rainfall are tough on timber. Keep your deck looking sharp with these seasonal tips.</p>
+          <span class="blog-read-more">Read article →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo">Peak<span>Home</span></a>
+      <p>Connecting Auckland homeowners with reliable, vetted tradespeople since 2018.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <p>📍 47 Beaumont Street, Auckland 1010</p>
+      <p>📞 <a href="tel:0094217830" style="color:inherit;">09 421 7830</a></p>
+      <p>✉️ <a href="mailto:hello@peakhome.co.nz" style="color:inherit;">hello@peakhome.co.nz</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 PeakHome NZ Ltd. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
 </html>
