@@ -40,6 +40,11 @@ a {
   text-decoration: none;
 }
 
+.article-content a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 img {
   max-width: 100%;
   display: block;

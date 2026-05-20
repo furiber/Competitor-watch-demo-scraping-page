@@ -6,7 +6,7 @@ A static marketing website for PeakHome NZ — Auckland's trusted network of vet
 
 ## Site Structure
 
-```
+```text
 index.html              Home page
 services.html           Six trade services
 pricing.html            Three pricing plans + comparison table
@@ -55,13 +55,16 @@ Per the project rules in `CLAUDE.md`, **all** `<lastmod>` values must be updated
 ### Adding a new blog post
 
 1. Copy an existing post file, e.g.:
-   ```
+
+   ```bash
    cp blog/deck-maintenance-tips.html blog/my-new-post.html
    ```
+
 2. Edit the new file: update `<title>`, `<meta name="description">`, `<link rel="canonical">`, the article header, and the article body content.
 3. Add the new post to `blog/index.html` — copy one of the existing `.blog-card` anchor blocks and update the `href`, image emoji/background, date, title, and excerpt.
 4. Add a link to the new post from the home page (`index.html`) "From the Blog" section if you want it featured there.
 5. Add a new `<url>` entry to `public/sitemap.xml`:
+
    ```xml
    <url>
      <loc>https://peakhome-nz.vercel.app/blog/my-new-post</loc>
@@ -70,5 +73,6 @@ Per the project rules in `CLAUDE.md`, **all** `<lastmod>` values must be updated
      <priority>0.7</priority>
    </url>
    ```
+
 6. Update **all** other `<lastmod>` values in the sitemap to today's date.
 7. Commit and push.

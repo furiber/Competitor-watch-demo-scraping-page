@@ -13,8 +13,8 @@
 <nav class="nav">
   <div class="container nav-inner">
     <a href="/" class="logo">Peak<span>Home</span></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">&#9776;</button>
-    <ul class="nav-links">
+    <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false" onclick="const menu=this.nextElementSibling; const open=menu.classList.toggle('open'); this.setAttribute('aria-expanded', String(open));">&#9776;</button>
+    <ul id="primary-nav" class="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="/services">Services</a></li>
       <li><a href="/pricing">Pricing</a></li>
@@ -52,7 +52,7 @@
           <div class="contact-item-icon">📞</div>
           <div class="contact-item-text">
             <strong>Phone</strong>
-            <a href="tel:0094217830" style="color:var(--text);">09 421 7830</a><br>
+            <a href="tel:+6494217830" style="color:var(--text);">09 421 7830</a><br>
             <span style="font-size:0.85rem;color:var(--text-muted);">Mon–Fri 7am–6pm, Sat 8am–2pm</span>
           </div>
         </div>
@@ -76,7 +76,7 @@
 
         <div style="margin-top:2rem;padding:1.5rem;background:var(--orange-light);border-radius:12px;border-left:3px solid var(--orange);">
           <p style="font-size:0.92rem;font-weight:600;margin-bottom:0.35rem;">Need an urgent callout?</p>
-          <p style="font-size:0.9rem;color:var(--text-muted);">Call us directly on <a href="tel:0094217830" style="color:var(--orange);font-weight:600;">09 421 7830</a>. Premium subscribers receive after-hours callout service.</p>
+          <p style="font-size:0.9rem;color:var(--text-muted);">Call us directly on <a href="tel:+6494217830" style="color:var(--orange);font-weight:600;">09 421 7830</a>. Premium subscribers receive after-hours callout service.</p>
         </div>
       </div>
 
@@ -151,7 +151,7 @@
     <div class="footer-contact">
       <h4>Get in Touch</h4>
       <p>📍 47 Beaumont Street, Auckland 1010</p>
-      <p>📞 <a href="tel:0094217830" style="color:inherit;">09 421 7830</a></p>
+      <p>📞 <a href="tel:+6494217830" style="color:inherit;">09 421 7830</a></p>
       <p>✉️ <a href="mailto:hello@peakhome.co.nz" style="color:inherit;">hello@peakhome.co.nz</a></p>
     </div>
   </div>

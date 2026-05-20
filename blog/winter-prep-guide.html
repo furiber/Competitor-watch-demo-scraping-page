@@ -13,8 +13,8 @@
 <nav class="nav">
   <div class="container nav-inner">
     <a href="/" class="logo">Peak<span>Home</span></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">&#9776;</button>
-    <ul class="nav-links">
+    <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false" onclick="const menu=this.nextElementSibling; const open=menu.classList.toggle('open'); this.setAttribute('aria-expanded', String(open));">&#9776;</button>
+    <ul id="primary-nav" class="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="/services">Services</a></li>
       <li><a href="/pricing">Pricing</a></li>
@@ -111,7 +111,7 @@
     <div class="footer-contact">
       <h4>Get in Touch</h4>
       <p>📍 47 Beaumont Street, Auckland 1010</p>
-      <p>📞 <a href="tel:0094217830" style="color:inherit;">09 421 7830</a></p>
+      <p>📞 <a href="tel:+6494217830" style="color:inherit;">09 421 7830</a></p>
       <p>✉️ <a href="mailto:hello@peakhome.co.nz" style="color:inherit;">hello@peakhome.co.nz</a></p>
     </div>
   </div>
