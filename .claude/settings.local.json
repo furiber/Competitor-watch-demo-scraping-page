@@ -3,7 +3,8 @@
     "allow": [
       "Bash(git push *)",
       "Bash(gh pr *)",
-      "Bash(gh repo *)"
+      "Bash(gh repo *)",
+      "mcp__00b239c5-b114-438e-b1f8-b73b19a63f90__list_deployments"
     ]
   }
 }
