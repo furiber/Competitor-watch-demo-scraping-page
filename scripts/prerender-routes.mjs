@@ -6,83 +6,98 @@ const builtIndexPath = path.join(distDir, 'index.html');
 
 const routeSEO = {
   '/': {
-    title: 'Coffee Roulette App for Teams | TeamBlend',
+    title: 'PeakHome NZ — Your Home, Looked After',
     description:
-      'Automated team pairing that respects your org chart. Break down silos and build culture. Launch in 5 minutes. No credit card.',
-    canonical: 'https://www.coffeerouletteapp.com/',
-    h1: 'Coffee Roulette App for Remote and Hybrid Teams',
+      'PeakHome NZ connects Auckland homeowners with reliable, vetted tradespeople. Fast response, fixed pricing, and quality you can trust.',
+    canonical: 'https://competitor-watch-demo-scraping-page.vercel.app/',
+    h1: 'Your home, looked after.',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: 'Coffee Roulette App for Teams | TeamBlend',
-      url: 'https://www.coffeerouletteapp.com/',
+      name: 'PeakHome NZ — Your Home, Looked After',
+      url: 'https://competitor-watch-demo-scraping-page.vercel.app/',
       description:
-        'Automated team pairing that respects your org chart. Break down silos and build culture. Launch in 5 minutes. No credit card.',
+        'PeakHome NZ connects Auckland homeowners with reliable, vetted tradespeople. Fast response, fixed pricing, and quality you can trust.',
     },
   },
-  '/business-case': {
-    title: 'ROI of Employee Connection Programs | TeamBlend',
+  '/services': {
+    title: 'Services — PeakHome NZ',
     description:
-      'The $483B disengagement cost — and how structured coffee pairing reduces turnover. Business case data for HR leaders.',
-    canonical: 'https://www.coffeerouletteapp.com/business-case',
-    h1: 'Coffee Roulette ROI: The Business Case for Employee Connection',
+      'PeakHome NZ offers plumbing, electrical, roofing, painting, landscaping, and general maintenance across Auckland. Licensed, insured tradespeople.',
+    canonical: 'https://competitor-watch-demo-scraping-page.vercel.app/services',
+    h1: 'Trade services for every home',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: 'ROI of Employee Connection Programs | TeamBlend',
-      url: 'https://www.coffeerouletteapp.com/business-case',
+      name: 'Services — PeakHome NZ',
+      url: 'https://competitor-watch-demo-scraping-page.vercel.app/services',
       description:
-        'The $483B disengagement cost — and how structured coffee pairing reduces turnover. Business case data for HR leaders.',
+        'PeakHome NZ offers plumbing, electrical, roofing, painting, landscaping, and general maintenance across Auckland. Licensed, insured tradespeople.',
     },
   },
-  '/remote-isolation': {
-    title: 'Combating Remote Workplace Loneliness | TeamBlend',
+  '/pricing': {
+    title: 'Pricing — PeakHome NZ',
     description:
-      '1 in 5 remote workers feels lonely. Gallup data shows the cost — and how TeamBlend fixes it systematically.',
-    canonical: 'https://www.coffeerouletteapp.com/remote-isolation',
-    h1: 'How to Reduce Remote Workplace Loneliness',
+      'Transparent pricing from PeakHome NZ. Hourly, flat-rate callout, and monthly subscription plans for Auckland homeowners.',
+    canonical: 'https://competitor-watch-demo-scraping-page.vercel.app/pricing',
+    h1: 'No surprises, ever',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: 'Combating Remote Workplace Loneliness | TeamBlend',
-      url: 'https://www.coffeerouletteapp.com/remote-isolation',
+      name: 'Pricing — PeakHome NZ',
+      url: 'https://competitor-watch-demo-scraping-page.vercel.app/pricing',
       description:
-        '1 in 5 remote workers feels lonely. Gallup data shows the cost — and how TeamBlend fixes it systematically.',
-    },
-  },
-  '/virtual-watercooler': {
-    title: 'Virtual Water Cooler App for Teams | TeamBlend',
-    description:
-      'Cornell research confirms spontaneous conversations drive innovation. TeamBlend engineers serendipity for remote teams.',
-    canonical: 'https://www.coffeerouletteapp.com/virtual-watercooler',
-    h1: 'Virtual Water Cooler for Remote Team Innovation',
-    schema: {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      name: 'Virtual Water Cooler App for Teams | TeamBlend',
-      url: 'https://www.coffeerouletteapp.com/virtual-watercooler',
-      description:
-        'Cornell research confirms spontaneous conversations drive innovation. TeamBlend engineers serendipity for remote teams.',
+        'Transparent pricing from PeakHome NZ. Hourly, flat-rate callout, and monthly subscription plans for Auckland homeowners.',
     },
   },
   '/about': {
-    title: 'About TeamBlend | Coffee Roulette for Remote Teams',
+    title: 'About Us — PeakHome NZ',
     description:
-      'TeamBlend was built to solve the workplace loneliness problem in remote and hybrid teams. Learn about our mission and the research behind our product.',
-    canonical: 'https://www.coffeerouletteapp.com/about',
-    h1: 'About TeamBlend: Coffee Roulette for Teams',
+      'PeakHome NZ was founded in Auckland in 2018. We\'re a team of trade veterans on a mission to make home maintenance honest, predictable, and stress-free.',
+    canonical: 'https://competitor-watch-demo-scraping-page.vercel.app/about',
+    h1: 'Built by tradies, for homeowners',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: 'About TeamBlend | Coffee Roulette for Remote Teams',
-      url: 'https://www.coffeerouletteapp.com/about',
+      name: 'About Us — PeakHome NZ',
+      url: 'https://competitor-watch-demo-scraping-page.vercel.app/about',
       description:
-        'TeamBlend was built to solve the workplace loneliness problem in remote and hybrid teams. Learn about our mission and the research behind our product.',
+        'PeakHome NZ was founded in Auckland in 2018. We\'re a team of trade veterans on a mission to make home maintenance honest, predictable, and stress-free.',
+    },
+  },
+  '/blog': {
+    title: 'Blog — PeakHome NZ',
+    description:
+      'Homeowner guides, seasonal maintenance tips, and trade advice from the PeakHome NZ team in Auckland.',
+    canonical: 'https://competitor-watch-demo-scraping-page.vercel.app/blog',
+    h1: 'Tips, guides & trade advice',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Blog — PeakHome NZ',
+      url: 'https://competitor-watch-demo-scraping-page.vercel.app/blog',
+      description:
+        'Homeowner guides, seasonal maintenance tips, and trade advice from the PeakHome NZ team in Auckland.',
+    },
+  },
+  '/contact': {
+    title: 'Contact — PeakHome NZ',
+    description:
+      'Get in touch with PeakHome NZ. Book a tradie, request a quote, or ask us anything. Based in Auckland, serving all of greater Auckland.',
+    canonical: 'https://competitor-watch-demo-scraping-page.vercel.app/contact',
+    h1: 'Let\'s sort your home',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Contact — PeakHome NZ',
+      url: 'https://competitor-watch-demo-scraping-page.vercel.app/contact',
+      description:
+        'Get in touch with PeakHome NZ. Book a tradie, request a quote, or ask us anything. Based in Auckland, serving all of greater Auckland.',
     },
   },
 };
 
-const OG_IMAGE = 'https://www.coffeerouletteapp.com/og-image.png';
+const OG_IMAGE = 'https://competitor-watch-demo-scraping-page.vercel.app/og-image.png';
 
 const escapeHtml = (value) =>
   value
