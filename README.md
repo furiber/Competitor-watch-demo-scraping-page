@@ -2,7 +2,7 @@
 
 A static marketing website for PeakHome NZ — Auckland's trusted network of vetted tradespeople.
 
-**Live URL:** [https://peakhome-nz.vercel.app](https://competitor-watch-demo-scraping-page.vercel.app/)
+**Live URL:** [https://competitor-watch-demo-scraping-page.vercel.app](https://competitor-watch-demo-scraping-page.vercel.app/)
 
 ## Site Structure
 
@@ -67,7 +67,7 @@ Per the project rules in `CLAUDE.md`, **all** `<lastmod>` values must be updated
 
    ```xml
    <url>
-     <loc>https://peakhome-nz.vercel.app/blog/my-new-post</loc>
+     <loc>https://competitor-watch-demo-scraping-page.vercel.app/blog/my-new-post</loc>
      <lastmod>2026-05-20</lastmod>
      <changefreq>monthly</changefreq>
      <priority>0.7</priority>
